@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "bootstrap": {
+      "root": "libs/bootstrap",
+      "sourceRoot": "libs/bootstrap/src",
+      "projectType": "library",
+      "prefix": "flyerjs",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "libs/bootstrap/tsconfig.lib.json",
+            "project": "libs/bootstrap/ng-package.json"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/bootstrap/tsconfig.lib.json",
+              "libs/bootstrap/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/builders:jest",
+          "options": {
+            "jestConfig": "libs/bootstrap/jest.config.js",
+            "tsConfig": "libs/bootstrap/tsconfig.spec.json",
+            "setupFile": "libs/bootstrap/src/test-setup.ts"
+          }
+        }
+      }
     }
   },
   "cli": {

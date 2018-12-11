@@ -15,6 +15,11 @@
     },
     "demo-e2e": {
       "tags": []
+    },
+    "bootstrap": {
+      "tags": [
+        "library"
+      ]
     }
   }
 }

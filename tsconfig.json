@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@flyerjs/bootstrap": [
+        "libs/bootstrap/src/index.ts"
+      ]
     }
   },
   "exclude": [
