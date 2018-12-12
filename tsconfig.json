@@ -17,7 +17,7 @@
     "baseUrl": ".",
     "paths": {
       "@flyerjs/bootstrap": [
-        "libs/bootstrap/src/index.ts"
+        "libs/bootstrap/src"
       ]
     }
   },

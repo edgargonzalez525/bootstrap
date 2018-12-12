@@ -4,6 +4,8 @@
     "directive-selector": false,
     "component-selector": false,
     "component-class-suffix": false,
-    "use-input-property-decorator": false
+    "use-input-property-decorator": false,
+    "trailing-comma": true,
+    "no-inferrable-types": false
   }
 }
