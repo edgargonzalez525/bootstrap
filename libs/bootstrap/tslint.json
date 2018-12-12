@@ -1,7 +1,9 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [true, "attribute", "flyerjs", "camelCase"],
-    "component-selector": [true, "element", "flyerjs", "kebab-case"]
+    "directive-selector": false,
+    "component-selector": false,
+    "component-class-suffix": false,
+    "use-input-property-decorator": false
   }
 }

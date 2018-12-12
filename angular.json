@@ -7,7 +7,7 @@
       "root": "apps/demo/",
       "sourceRoot": "apps/demo/src",
       "projectType": "application",
-      "prefix": "flyerjs",
+      "prefix": "fly",
       "schematics": {
         "@schematics/angular:component": {
           "styleext": "scss"
@@ -129,7 +129,12 @@
       "root": "libs/bootstrap",
       "sourceRoot": "libs/bootstrap/src",
       "projectType": "library",
-      "prefix": "flyerjs",
+      "prefix": "fly",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",

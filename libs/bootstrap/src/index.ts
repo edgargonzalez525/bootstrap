@@ -1,1 +1,1 @@
-export * from './lib/bootstrap.module';
+export * from './lib/button/button.module';
